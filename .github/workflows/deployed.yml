@@ -44,7 +44,7 @@ deploy:
     runs-on: self-hosted # Use your self-hosted runner label here
     
       - name: Pull the Docker image
-        run: docker pull sevenajay/tic-tac-toe:latest
+        run: docker pull vramgreddy/tic-tac-toe:latest
 
       - name: Trivy image scan
         run: trivy image vramgreddy/tic-tac-toedeploy:latest # Add Trivy scan command here  
